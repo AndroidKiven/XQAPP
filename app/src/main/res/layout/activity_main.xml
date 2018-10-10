@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kiven.xq.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_public_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startLive"
+            android:text="按钮切换为开"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stopLive"
+            android:text="按钮切换为关"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:text="进行登录"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            android:text="退出登录"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showPublic"
+            android:text="显示公有目录数据"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_passId"
+            android:layout_width="match_parent"
+            android:hint="不设置默认传递空字符串"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setPassId"
+            android:text="设置passid" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showPrivate"
+            android:text="显示私有目录数据" />
+
+        <Button
+            android:id="@+id/lock_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="serverReturnOpen"
+            android:text="锁屏服务端返回为开" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="serverReturnClose"
+            android:text="锁屏服务端返回为关" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lockOpen"
+            android:text="锁屏新闻切换为开" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lockClose"
+            android:text="锁屏新闻切换为关" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="liveReturnOpen"
+            android:text="拉活开关服务端返回为开" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="liveReturnClose"
+            android:text="拉活开关服务端返回为关" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="liveOpen"
+            android:text="拉活开关切换为开" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="liveClose"
+            android:text="拉活开关切换为关" />
+
+        <TextView
+            android:id="@+id/tv_private_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showPublic" />
+
+    </LinearLayout>
+</ScrollView>
