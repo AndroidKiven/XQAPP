@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mobileAds-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mobileAds-release.aar/900a369802e961f0279b920d2661d633/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mobileAds-release.aar/900a369802e961f0279b920d2661d633/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

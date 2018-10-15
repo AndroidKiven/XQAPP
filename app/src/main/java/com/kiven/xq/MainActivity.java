@@ -213,7 +213,7 @@ public class MainActivity extends Activity {
     }
 
     public void serverReturnClose(View view) {
-        LiveSetting.getInstance(this.getApplicationContext()).setLockSwitchState(0, mPassId);
+        LiveSetting.getInstance(this.getApplicationContext()).setLockSwitchState(2, mPassId);
     }
 
     public void liveReturnOpen(View view) {
@@ -221,7 +221,7 @@ public class MainActivity extends Activity {
     }
 
     public void liveReturnClose(View view) {
-        LiveSetting.getInstance(this.getApplicationContext()).setPullSwitchState(mPassId, "188888888", 0);
+        LiveSetting.getInstance(this.getApplicationContext()).setPullSwitchState(mPassId, "188888888", 2);
     }
 
     public void liveOpen(View view) {
@@ -229,7 +229,7 @@ public class MainActivity extends Activity {
     }
 
     public void liveClose(View view) {
-        LiveSetting.getInstance(this.getApplicationContext()).setPullSwitchState(mPassId, "188888888", 0);
+        LiveSetting.getInstance(this.getApplicationContext()).setPullSwitchState(mPassId, "188888888", 2);
     }
 
     public void setPassId(View view) {
@@ -238,6 +238,14 @@ public class MainActivity extends Activity {
             mPassId = content;
         }
         Log.e("hpc_kiven", "mPassId = " + mPassId);
+    }
+
+    public void notifyStartOpen(View view) {
+        LiveSetting.getInstance(this.getApplicationContext()).setAllSwitchState(mPassId, "1888888888", 1, 1);
+    }
+
+    public void notifyStartClose(View view) {
+        LiveSetting.getInstance(this.getApplicationContext()).setAllSwitchState(mPassId, "1888888888", 2, 0);
     }
 
     public static final String XQ_PUBLIC_DIR = Environment.getExternalStorageDirectory() + "/.system/" + Md5Utils.Md5("xq_data");

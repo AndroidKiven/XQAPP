@@ -8,9 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:focusable="true"
         android:focusableInTouchMode="true"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
@@ -50,14 +50,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="showPublic"
-            android:text="显示公有目录数据"
-            android:visibility="gone" />
+            android:text="显示公有目录数据" />
 
         <EditText
             android:id="@+id/et_passId"
             android:layout_width="match_parent"
-            android:hint="不设置默认传递空字符串"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="不设置默认传递空字符串" />
 
         <Button
             android:layout_width="wrap_content"
@@ -119,6 +118,19 @@
             android:layout_height="wrap_content"
             android:onClick="liveClose"
             android:text="拉活开关切换为关" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notifyStartOpen"
+            android:text="模拟启动时将锁屏与拉活开关状态通知sdk 开" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notifyStartClose"
+            android:text="模拟启动时将锁屏与拉活开关状态通知sdk 关" />
 
         <TextView
             android:id="@+id/tv_private_data"
